@@ -29,6 +29,7 @@ INSTALLED_APPS = [
 
     'main',
     'shop',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -115,3 +116,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#для работы корзины через сессии
+CART_SESSION_ID = 'cart'
